@@ -52,9 +52,10 @@ sudo chown -R $USER:$USER "${APP_DIR}"
 # 4. Install dependencies and compile Next.js
 cd "${APP_DIR}"
 echo "Installing project dependencies..."
-npm ci --omit=dev || npm install
+npm install
 npx prisma generate
 npx prisma db push --accept-data-loss
+npx prisma db seed || true
 npm run build
 
 # 5. Start / Reload with PM2 on dedicated port
