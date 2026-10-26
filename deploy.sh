@@ -53,9 +53,8 @@ sudo chown -R $USER:$USER "${APP_DIR}"
 cd "${APP_DIR}"
 echo "Installing project dependencies..."
 npm install
-npx prisma generate
-npx prisma db push --accept-data-loss
-npx prisma db seed || true
+echo "Populating MongoDB collections (vehicles, locations, admin)..."
+npm run seed || true
 npm run build
 
 # 5. Start / Reload with PM2 on dedicated port
