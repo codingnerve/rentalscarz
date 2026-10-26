@@ -1,0 +1,115 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Vehicle {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  name            String
+  brand           String
+  model           String
+  category        String   // economy | compact | sedan | suv | luxury | premium | minivan
+  year            Int
+  seats           Int
+  doors           Int
+  luggage         Int
+  transmission    String   // Automatic | Manual
+  fuelType        String   // Petrol | Hybrid | Electric | Diesel
+  dailyRate       Float
+  currency        String   @default("USD")
+  depositAmount   Float    @default(250)
+  mileageLimit    String   @default("Unlimited mileage included")
+  minDriverAge    Int      @default(21)
+  featured        Boolean  @default(false)
+  isActive        Boolean  @default(true)
+  imageUrl        String
+  gallery         String   // JSON stringified array of image URLs
+  features        String   // JSON stringified array of key features
+  description     String
+  engine          String?  // e.g. "2.0L 4-Cylinder" or "Dual Motor Electric"
+  fuelEconomy     String?  // e.g. "34 MPG / 6.9 L/100km"
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Location {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  name            String
+  shortName       String
+  city            String
+  stateOrRegion   String
+  country         String   // US | UK | CA
+  countryName     String   // United States | United Kingdom | Canada
+  type            String   // airport | downtown
+  address         String
+  telephone       String
+  email           String
+  operatingHours  String
+  isPublished     Boolean  @default(true)
+  description     String
+  features        String   // JSON stringified array
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Booking {
+  id                  String    @id @default(cuid())
+  bookingReference    String    @unique
+  status              String    @default("Pending") // Pending | Under Review | Confirmed | Rejected | Cancelled | Completed
+  customerName        String
+  customerEmail       String
+  customerPhone       String
+  pickupLocationId    String
+  pickupLocationName  String
+  returnLocationId    String
+  returnLocationName  String
+  pickupDate          DateTime
+  pickupTime          String
+  returnDate          DateTime
+  returnTime          String
+  vehicleId           String
+  vehicleName         String
+  vehicleCategory     String
+  rentalDays          Int
+  dailyRate           Float
+  estimatedTotal      Float
+  currency            String    @default("USD")
+  customerNotes       String?
+  internalNotes       String?
+  driverAgeConfirmed  Boolean   @default(true)
+  policyAcknowledged  Boolean   @default(true)
+  confirmedAt         DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  role         String   @default("admin")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model BusinessSettings {
+  id                   String   @id @default("default")
+  companyName          String   @default("RentalsCarz")
+  supportPhoneUS       String   @default("+1 (800) 555-0199")
+  supportPhoneUK       String   @default("+44 20 7946 0991")
+  supportPhoneCA       String   @default("+1 (888) 555-0142")
+  supportEmail         String   @default("reservations@rentalscarz.co")
+  defaultCurrency      String   @default("USD")
+  gaMeasurementId      String   @default("")
+  googleAdsConversionId String  @default("")
+  googleAdsBookingLabel String  @default("")
+  cancellationHours    Int      @default(48)
+  updatedAt            DateTime @updatedAt
+}
