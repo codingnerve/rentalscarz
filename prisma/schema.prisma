@@ -102,9 +102,9 @@ model AdminUser {
 model BusinessSettings {
   id                   String   @id @default("default")
   companyName          String   @default("RentalsCarz")
-  supportPhoneUS       String   @default("+1 (800) 555-0199")
-  supportPhoneUK       String   @default("+44 20 7946 0991")
-  supportPhoneCA       String   @default("+1 (888) 555-0142")
+  supportPhoneUS       String   @default("+1 (844) 471-8023")
+  supportPhoneUK       String   @default("+1 (844) 471-8023")
+  supportPhoneCA       String   @default("+1 (844) 471-8023")
   supportEmail         String   @default("reservations@rentalscarz.co")
   defaultCurrency      String   @default("USD")
   gaMeasurementId      String   @default("")

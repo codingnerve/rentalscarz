@@ -21,9 +21,9 @@ export default async function AdminSettingsPage() {
 
   const initialSettings = {
     companyName: settings?.companyName || "RentalsCarz",
-    supportPhoneUS: settings?.supportPhoneUS || "+1 (800) 555-0199",
-    supportPhoneUK: settings?.supportPhoneUK || "+44 20 7946 0991",
-    supportPhoneCA: settings?.supportPhoneCA || "+1 (888) 555-0142",
+    supportPhoneUS: settings?.supportPhoneUS || "+1 (844) 471-8023",
+    supportPhoneUK: settings?.supportPhoneUK || "+1 (844) 471-8023",
+    supportPhoneCA: settings?.supportPhoneCA || "+1 (844) 471-8023",
     supportEmail: settings?.supportEmail || "reservations@rentalscarz.co",
     defaultCurrency: settings?.defaultCurrency || "USD",
     gaMeasurementId: settings?.gaMeasurementId || "",

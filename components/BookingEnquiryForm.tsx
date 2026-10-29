@@ -226,7 +226,7 @@ export function BookingEnquiryForm({
         <div className="mt-6 p-4 rounded-xl bg-orange-50 border border-orange-200 text-xs text-slate-700 text-left">
           <p className="font-semibold text-[#213052] mb-1">What happens next?</p>
           <p>
-            An authorized reservation agent will verify vehicle availability at your chosen location and email your confirmed voucher within 1-2 hours. If you require immediate confirmation, please call our 24/7 priority line at <a href="tel:+18005550199" className="font-bold text-[#ED6029] underline">+1 (800) 555-0199</a>.
+            An authorized reservation agent will verify vehicle availability at your chosen location and email your confirmed voucher within 1-2 hours. If you require immediate confirmation, please call our 24/7 priority line at <a href="tel:+18444718023" className="font-bold text-[#ED6029] underline">+1 (844) 471-8023</a>.
           </p>
         </div>
 

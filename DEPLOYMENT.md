@@ -101,14 +101,12 @@ The platform defaults all consent signals (`ad_storage`, `analytics_storage`, `a
 
 ### Telephone Conversion Setup:
 All phone numbers on the website are wrapped with accessible `tel:` hyperlinks:
-- **US & International**: `+1 (800) 555-0199` (`tel:+18005550199`)
-- **United Kingdom**: `+44 20 7946 0991` (`tel:+442079460991`)
-- **Canada**: `+1 (888) 555-0142` (`tel:+18885550142`)
+- **Toll-Free (US, UK & Canada)**: `+1 (844) 471-8023` (`tel:+18444718023`)
 
 To activate Google Ads Website Call Conversion Tracking:
 1. In Google Ads, create a Conversion Action for "Calls to a phone number on your website".
 2. Enter the corresponding target phone number above.
-3. Replace the plain link text or attach Google's `gtag('config', 'AW-XXX', { 'phone_conversion_number': '+1-800-555-0199' });`.
+3. Replace the plain link text or attach Google's `gtag('config', 'AW-XXX', { 'phone_conversion_number': '+1-844-471-8023' });`.
 
 ---
 

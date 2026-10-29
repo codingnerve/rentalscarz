@@ -44,9 +44,9 @@ export async function POST(req: NextRequest) {
       create: {
         id: "default",
         companyName: body.companyName || "RentalsCarz",
-        supportPhoneUS: body.supportPhoneUS || "+1 (800) 555-0199",
-        supportPhoneUK: body.supportPhoneUK || "+44 20 7946 0991",
-        supportPhoneCA: body.supportPhoneCA || "+1 (888) 555-0142",
+        supportPhoneUS: body.supportPhoneUS || "+1 (844) 471-8023",
+        supportPhoneUK: body.supportPhoneUK || "+1 (844) 471-8023",
+        supportPhoneCA: body.supportPhoneCA || "+1 (844) 471-8023",
         supportEmail: body.supportEmail || "reservations@rentalscarz.co",
         defaultCurrency: body.defaultCurrency || "USD",
         gaMeasurementId: body.gaMeasurementId || "",

@@ -33,9 +33,9 @@ export default async function LocationsDirectoryPage() {
   }
 
   const countries = [
-    { code: "US", name: "United States", phone: "+1 (800) 555-0199" },
-    { code: "UK", name: "United Kingdom", phone: "+44 20 7946 0991" },
-    { code: "CA", name: "Canada", phone: "+1 (888) 555-0142" },
+    { code: "US", name: "United States", phone: "+1 (844) 471-8023" },
+    { code: "UK", name: "United Kingdom", phone: "+1 (844) 471-8023" },
+    { code: "CA", name: "Canada", phone: "+1 (844) 471-8023" },
   ];
 
   return (

@@ -74,11 +74,11 @@ export default async function LongTermCarRentalPage() {
               Browse Extended Fleet
             </Link>
             <a
-              href="tel:+18005550199"
+              href="tel:+18444718023"
               className="px-8 py-3.5 rounded-xl font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all inline-flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-[#ED6029]" />
-              <span>Call Monthly Desk: +1 (800) 555-0199</span>
+              <span>Call Monthly Desk: +1 (844) 471-8023</span>
             </a>
           </div>
         </div>

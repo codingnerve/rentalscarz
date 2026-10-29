@@ -58,7 +58,7 @@ export async function sendBookingEnquiryNotification(
       </p>
 
       <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 12px; font-size: 12px; color: #94a3b8;">
-        RentalsCarz Customer Service • US: +1 (800) 555-0199 • UK: +44 20 7946 0991 • CA: +1 (888) 555-0142
+        RentalsCarz Customer Service • Toll-Free (US, UK & CA): +1 (844) 471-8023
       </div>
     </div>
   `;

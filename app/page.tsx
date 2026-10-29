@@ -167,7 +167,7 @@ export default async function HomePage() {
         logo: "https://rentalscarz.co/logo.png",
         image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
         description: "Premium car rental services across major airport hubs in the US, UK, and Canada.",
-        telephone: "+18005550199",
+        telephone: "+18444718023",
         priceRange: "$$",
         areaServed: [
           { "@type": "Country", name: "United States" },
@@ -678,11 +678,11 @@ export default async function HomePage() {
             </Link>
 
             <a
-              href="tel:+18005550199"
+              href="tel:+18444718023"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all"
             >
               <Phone className="w-4 h-4 text-[#ED6029]" />
-              <span>Call Us: +1 (800) 555-0199</span>
+              <span>Call Us: +1 (844) 471-8023</span>
             </a>
 
             <Link

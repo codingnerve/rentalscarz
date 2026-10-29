@@ -298,9 +298,9 @@ const BusinessSettingsSchema = new Schema<IBusinessSettings>(
   {
     id: { type: String, default: "default", unique: true },
     companyName: { type: String, default: "RentalsCarz" },
-    supportPhoneUS: { type: String, default: "+1 (800) 555-0199" },
-    supportPhoneUK: { type: String, default: "+44 20 7946 0991" },
-    supportPhoneCA: { type: String, default: "+1 (888) 555-0142" },
+    supportPhoneUS: { type: String, default: "+1 (844) 471-8023" },
+    supportPhoneUK: { type: String, default: "+1 (844) 471-8023" },
+    supportPhoneCA: { type: String, default: "+1 (844) 471-8023" },
     supportEmail: { type: String, default: "reservations@rentalscarz.co" },
     defaultCurrency: { type: String, default: "USD" },
     gaMeasurementId: { type: String, default: "" },

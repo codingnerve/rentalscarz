@@ -36,8 +36,8 @@ export default function NotFound() {
 
         <div className="pt-4 border-t border-slate-100 text-xs text-slate-500">
           Need booking assistance? Call reservations: <br />
-          <a href="tel:+18005550199" className="font-bold text-[#213052] hover:text-[#ED6029]">
-            +1 (800) 555-0199
+          <a href="tel:+18444718023" className="font-bold text-[#213052] hover:text-[#ED6029]">
+            +1 (844) 471-8023
           </a>
         </div>
       </div>

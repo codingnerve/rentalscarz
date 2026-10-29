@@ -122,33 +122,33 @@ export function Footer() {
               <div>
                 <span className="block text-[11px] font-semibold text-slate-400 uppercase">United States:</span>
                 <a
-                  href="tel:+18005550199"
+                  href="tel:+18444718023"
                   className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                  +1 (800) 555-0199
+                  +1 (844) 471-8023
                 </a>
               </div>
 
               <div>
                 <span className="block text-[11px] font-semibold text-slate-400 uppercase">United Kingdom:</span>
                 <a
-                  href="tel:+442079460991"
+                  href="tel:+18444718023"
                   className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                  +44 20 7946 0991
+                  +1 (844) 471-8023
                 </a>
               </div>
 
               <div>
                 <span className="block text-[11px] font-semibold text-slate-400 uppercase">Canada:</span>
                 <a
-                  href="tel:+18885550142"
+                  href="tel:+18444718023"
                   className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                  +1 (888) 555-0142
+                  +1 (844) 471-8023
                 </a>
               </div>
 

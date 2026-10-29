@@ -101,7 +101,7 @@ export default function CancellationPolicyPage() {
                 <strong>Online Self-Service:</strong> Visit our <Link href="/booking" className="text-[#ED6029] font-bold underline">Booking Lookup Portal</Link> with your reference code (e.g. RC-849201).
               </li>
               <li>
-                <strong>24/7 Telephone Assistance:</strong> Call our global dispatch line at <a href="tel:+18005550199" className="text-[#ED6029] font-bold underline">+1 (800) 555-0199</a> for immediate agent assistance.
+                <strong>24/7 Telephone Assistance:</strong> Call our global dispatch line at <a href="tel:+18444718023" className="text-[#ED6029] font-bold underline">+1 (844) 471-8023</a> for immediate agent assistance.
               </li>
             </ul>
           </section>

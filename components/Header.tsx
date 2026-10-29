@@ -33,9 +33,9 @@ export function Header() {
   ];
 
   const phoneNumbers = [
-    { country: "United States", code: "US", number: "+1 (800) 555-0199", tel: "+18005550199" },
-    { country: "United Kingdom", code: "UK", number: "+44 20 7946 0991", tel: "+442079460991" },
-    { country: "Canada", code: "CA", number: "+1 (888) 555-0142", tel: "+18885550142" },
+    { country: "United States", code: "US", number: "+1 (844) 471-8023", tel: "+18444718023" },
+    { country: "United Kingdom", code: "UK", number: "+1 (844) 471-8023", tel: "+18444718023" },
+    { country: "Canada", code: "CA", number: "+1 (844) 471-8023", tel: "+18444718023" },
   ];
 
   return (
@@ -80,7 +80,7 @@ export function Header() {
                 className="inline-flex items-center gap-2 px-3 py-2 text-xs font-bold text-[#213052] bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors border border-slate-200"
               >
                 <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                <span>Call Desk</span>
+                <span>+1 (844) 471-8023</span>
                 <ChevronDown className="w-3 h-3 text-slate-500" />
               </button>
 
@@ -124,7 +124,7 @@ export function Header() {
           {/* Mobile menu button */}
           <div className="flex items-center gap-2 lg:hidden">
             <a
-              href="tel:+18005550199"
+              href="tel:+18444718023"
               aria-label="Call Reservations"
               className="p-2 text-[#213052] hover:text-[#ED6029] bg-slate-100 rounded-lg"
             >
@@ -198,20 +198,20 @@ export function Header() {
                 <div className="space-y-1 text-slate-600">
                   <div className="flex justify-between">
                     <span>USA / Int:</span>
-                    <a href="tel:+18005550199" className="font-bold text-[#213052]">
-                      +1 (800) 555-0199
+                    <a href="tel:+18444718023" className="font-bold text-[#213052]">
+                      +1 (844) 471-8023
                     </a>
                   </div>
                   <div className="flex justify-between">
                     <span>United Kingdom:</span>
-                    <a href="tel:+442079460991" className="font-bold text-[#213052]">
-                      +44 20 7946 0991
+                    <a href="tel:+18444718023" className="font-bold text-[#213052]">
+                      +1 (844) 471-8023
                     </a>
                   </div>
                   <div className="flex justify-between">
                     <span>Canada:</span>
-                    <a href="tel:+18885550142" className="font-bold text-[#213052]">
-                      +1 (888) 555-0142
+                    <a href="tel:+18444718023" className="font-bold text-[#213052]">
+                      +1 (844) 471-8023
                     </a>
                   </div>
                 </div>

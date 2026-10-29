@@ -141,11 +141,11 @@ export default function FaqPage() {
           </p>
           <div className="flex justify-center gap-3 pt-2">
             <a
-              href="tel:+18005550199"
+              href="tel:+18444718023"
               className="px-5 py-2.5 bg-[#ED6029] text-white rounded-xl text-xs font-bold hover:bg-[#d9531e] inline-flex items-center gap-1.5"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>Call Us: +1 (800) 555-0199</span>
+              <span>Call Us: +1 (844) 471-8023</span>
             </a>
             <Link
               href="/contact"

@@ -24,20 +24,20 @@ export function AnnouncementBar() {
           <span className="text-slate-400 hidden sm:inline">Enquiries & Telephone Bookings:</span>
           <div className="flex items-center gap-2">
             <a
-              href="tel:+18005550199"
+              href="tel:+18444718023"
               className="inline-flex items-center gap-1 font-semibold text-white hover:text-[#ED6029] transition-colors focus:underline"
               title="Call US & International Support"
             >
               <Phone className="w-3 h-3 text-[#ED6029]" aria-hidden="true" />
-              <span>US: +1 (800) 555-0199</span>
+              <span>US: +1 (844) 471-8023</span>
             </a>
             <span className="text-slate-600">|</span>
             <a
-              href="tel:+442079460991"
+              href="tel:+18444718023"
               className="font-semibold text-white hover:text-[#ED6029] transition-colors focus:underline hidden sm:inline"
               title="Call UK Support"
             >
-              UK: +44 20 7946 0991
+              UK: +1 (844) 471-8023
             </a>
           </div>
         </div>
