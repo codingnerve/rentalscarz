@@ -8,19 +8,16 @@ import {
   Menu,
   X,
   Phone,
-  ChevronDown,
   Search,
 } from "lucide-react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [phoneMenuOpen, setPhoneMenuOpen] = useState(false);
   const pathname = usePathname();
 
   // Close menus on route change
   useEffect(() => {
     setMobileMenuOpen(false);
-    setPhoneMenuOpen(false);
   }, [pathname]);
 
   const navLinks = [
@@ -30,12 +27,6 @@ export function Header() {
     { label: "Airport Rentals", href: "/airport-car-rental" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
-  ];
-
-  const phoneNumbers = [
-    { country: "United States", code: "US", number: "+1 (844) 471-8023", tel: "+18444718023" },
-    { country: "United Kingdom", code: "UK", number: "+1 (844) 471-8023", tel: "+18444718023" },
-    { country: "Canada", code: "CA", number: "+1 (844) 471-8023", tel: "+18444718023" },
   ];
 
   return (
@@ -69,47 +60,15 @@ export function Header() {
 
           {/* Desktop Right CTAs */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
-            {/* Phone Selector Dropdown */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => setPhoneMenuOpen(!phoneMenuOpen)}
-                onBlur={() => setTimeout(() => setPhoneMenuOpen(false), 200)}
-                aria-expanded={phoneMenuOpen}
-                aria-label="Direct Phone Enquiries"
-                className="inline-flex items-center gap-2 px-3 py-2 text-xs font-bold text-[#213052] bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors border border-slate-200"
-              >
-                <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                <span>+1 (844) 471-8023</span>
-                <ChevronDown className="w-3 h-3 text-slate-500" />
-              </button>
-
-              {phoneMenuOpen && (
-                <div className="absolute right-0 top-full mt-2 w-64 rounded-xl bg-white shadow-xl border border-slate-200 py-2 z-50">
-                  <div className="px-4 py-1.5 text-[11px] font-semibold uppercase text-slate-400 border-b border-slate-100">
-                    Direct Phone Enquiries
-                  </div>
-                  {phoneNumbers.map((phone) => (
-                    <a
-                      key={phone.code}
-                      href={`tel:${phone.tel}`}
-                      className="block px-4 py-2 hover:bg-slate-50 transition-colors"
-                    >
-                      <div className="flex items-center justify-between text-xs text-slate-500 font-medium">
-                        <span>{phone.country}</span>
-                        <span className="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded font-mono font-bold">
-                          {phone.code}
-                        </span>
-                      </div>
-                      <div className="text-sm font-bold text-[#213052] mt-0.5 flex items-center gap-1.5">
-                        <Phone className="w-3 h-3 text-[#ED6029]" />
-                        {phone.number}
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Direct Phone Call Link */}
+            <a
+              href="tel:+18444718023"
+              className="inline-flex items-center gap-2 px-3.5 py-2.5 text-xs font-bold text-[#213052] bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors border border-slate-200 shadow-xs"
+              title="Call 24/7 Reservations Desk: +1 (844) 471-8023"
+            >
+              <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
+              <span className="font-mono text-sm font-extrabold">+1 (844) 471-8023</span>
+            </a>
 
             {/* Primary Action Button */}
             <Link
@@ -190,32 +149,21 @@ export function Header() {
                 <span>Search Vehicles Now</span>
               </Link>
 
-              <div className="bg-slate-50 rounded-xl p-3 border border-slate-200 text-xs">
-                <div className="font-bold text-[#213052] mb-1 flex items-center gap-1.5">
-                  <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                  Direct Phone Lines:
-                </div>
-                <div className="space-y-1 text-slate-600">
-                  <div className="flex justify-between">
-                    <span>USA / Int:</span>
-                    <a href="tel:+18444718023" className="font-bold text-[#213052]">
-                      +1 (844) 471-8023
-                    </a>
+              <a
+                href="tel:+18444718023"
+                className="bg-slate-50 hover:bg-slate-100 rounded-xl p-3 border border-slate-200 text-xs flex items-center justify-between transition-colors block"
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-lg bg-[#ED6029]/10 flex items-center justify-center text-[#ED6029] shrink-0">
+                    <Phone className="w-4 h-4" />
                   </div>
-                  <div className="flex justify-between">
-                    <span>United Kingdom:</span>
-                    <a href="tel:+18444718023" className="font-bold text-[#213052]">
-                      +1 (844) 471-8023
-                    </a>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Canada:</span>
-                    <a href="tel:+18444718023" className="font-bold text-[#213052]">
-                      +1 (844) 471-8023
-                    </a>
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-500 uppercase block">24/7 Reservations Desk</span>
+                    <span className="font-bold text-sm text-[#213052] font-mono">+1 (844) 471-8023</span>
                   </div>
                 </div>
-              </div>
+                <span className="text-xs font-bold text-white bg-[#ED6029] px-3 py-1.5 rounded-lg shrink-0">Call</span>
+              </a>
             </div>
           </div>
         </div>

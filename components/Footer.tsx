@@ -120,36 +120,15 @@ export function Footer() {
             </h3>
             <div className="space-y-3 text-sm">
               <div>
-                <span className="block text-[11px] font-semibold text-slate-400 uppercase">United States:</span>
+                <span className="block text-[11px] font-semibold text-slate-400 uppercase">24/7 Telephone Booking Desk:</span>
                 <a
                   href="tel:+18444718023"
-                  className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
+                  className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors text-base font-mono"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
+                  <Phone className="w-4 h-4 text-[#ED6029]" />
                   +1 (844) 471-8023
                 </a>
-              </div>
-
-              <div>
-                <span className="block text-[11px] font-semibold text-slate-400 uppercase">United Kingdom:</span>
-                <a
-                  href="tel:+18444718023"
-                  className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                  +1 (844) 471-8023
-                </a>
-              </div>
-
-              <div>
-                <span className="block text-[11px] font-semibold text-slate-400 uppercase">Canada:</span>
-                <a
-                  href="tel:+18444718023"
-                  className="font-bold text-white hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-[#ED6029]" />
-                  +1 (844) 471-8023
-                </a>
+                <span className="block text-xs text-slate-400 mt-0.5">Toll-Free • Live agent answers 24/7</span>
               </div>
 
               <div className="pt-1">

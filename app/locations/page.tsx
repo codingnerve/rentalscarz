@@ -89,7 +89,7 @@ export default async function LocationsDirectoryPage() {
                   </div>
 
                   <div className="text-xs">
-                    <span className="text-slate-400 block font-medium">Direct National Line:</span>
+                    <span className="text-slate-400 block font-medium">24/7 Reservations Desk:</span>
                     <a
                       href={`tel:${c.phone.replace(/[^0-9+]/g, "")}`}
                       className="text-sm font-bold text-[#ED6029] hover:underline inline-flex items-center gap-1.5"

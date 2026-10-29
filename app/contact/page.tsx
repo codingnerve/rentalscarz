@@ -18,30 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const phoneNumbers = [
-    {
-      country: "United States & International",
-      phone: "+1 (844) 471-8023",
-      tel: "+18444718023",
-      hours: "24 Hours / 7 Days a Week",
-      desc: "General enquiries, airport reservations, and roadside dispatch",
-    },
-    {
-      country: "United Kingdom",
-      phone: "+1 (844) 471-8023",
-      tel: "+18444718023",
-      hours: "24 Hours / 7 Days a Week",
-      desc: "Heathrow, Manchester & UK regional reservations",
-    },
-    {
-      country: "Canada",
-      phone: "+1 (844) 471-8023",
-      tel: "+18444718023",
-      hours: "24 Hours / 7 Days a Week",
-      desc: "Toronto Pearson, Vancouver & Canadian operations",
-    },
-  ];
-
   return (
     <div className="bg-slate-50 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,36 +52,42 @@ export default function ContactPage() {
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs space-y-6">
               <h2 className="text-xl font-bold text-[#213052] flex items-center gap-2">
                 <Phone className="w-5 h-5 text-[#ED6029]" />
-                <span>Dedicated Telephone Hotlines</span>
+                <span>Dedicated Telephone Hotline</span>
               </h2>
 
-              <div className="space-y-4">
-                {phoneNumbers.map((p, idx) => (
-                  <div
-                    key={idx}
-                    className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-slate-300 transition-colors"
-                  >
-                    <div>
-                      <span className="text-xs font-bold text-slate-700 block uppercase tracking-wider">
-                        {p.country}
-                      </span>
-                      <a
-                        href={`tel:${p.tel}`}
-                        className="text-lg font-black text-[#213052] hover:text-[#ED6029] inline-flex items-center gap-1.5 transition-colors"
-                      >
-                        <Phone className="w-4 h-4 text-[#ED6029]" />
-                        <span>{p.phone}</span>
-                      </a>
-                      <p className="text-xs text-slate-500 mt-0.5">{p.desc}</p>
-                    </div>
+              {/* Single Centralized Direct Phone Box */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#213052] to-[#17223b] text-white space-y-4 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-orange-300">
+                    24/7 Priority Reservations & Enquiries
+                  </span>
+                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                    Live 24/7
+                  </span>
+                </div>
 
-                    <div className="text-xs text-slate-500 sm:text-right shrink-0">
-                      <span className="font-semibold block text-emerald-600">
-                        {p.hours}
-                      </span>
-                    </div>
-                  </div>
-                ))}
+                <div>
+                  <a
+                    href="tel:+18444718023"
+                    className="text-2xl sm:text-3xl font-black text-white hover:text-[#ED6029] inline-flex items-center gap-2.5 transition-colors font-mono"
+                  >
+                    <Phone className="w-6 h-6 text-[#ED6029]" />
+                    <span>+1 (844) 471-8023</span>
+                  </a>
+                  <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                    Toll-Free • Instant agent dispatch • Fast help with vehicle bookings, airport terminal pickups, modifications &amp; roadside support.
+                  </p>
+                </div>
+
+                <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+                  <span>Open 24 Hours / 7 Days a Week</span>
+                  <a
+                    href="tel:+18444718023"
+                    className="px-4 py-2 bg-[#ED6029] hover:bg-[#d9531e] text-white font-bold rounded-xl transition-colors shadow-xs"
+                  >
+                    Call Now
+                  </a>
+                </div>
               </div>
 
               {/* Email & Headquarters */}
